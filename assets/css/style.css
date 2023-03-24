@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    text-align: center;
+    padding: 40px 100px;
+    background: #edf8f8;
+    min-height: 650px;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.banner h1 {
+    font-weight: 700;
+    color: #00023d;
+    position: relative;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.banner h1:after {
+    content: "";
+    background: #af9839;
+    width: 100px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+.category button {
+    border: 2px solid #af9839;
+    border-right-color: #332b08;
+    border-bottom-color: #332b08;
+    border-radius: 6px;
+    padding: 10px 10px;
+    color: #af9839;
+    transition: all 1s;
+}
+
+button+button {
+    margin-left: 18px;
+}
+
+.content {
+    text-align: justify;
+}
+.mt-5 {
+    margin-top: 3rem!important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.content img {
+    border: 4px solid #af9839;
+    border-radius: 10px;
+}
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 55%;
+}
+
+.col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.justify-content-between {
+    justify-content: space-between!important;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.content .title {
+    color: #00023d;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.price {
+    color: #af9839;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.des {
+    color: #5c5d85;
+}
+
+.des {
+    border-top: 1px dotted;
+    padding-top: 20px;
+}
+.mt-2 {
+    margin-top: 0.5rem!important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.item + .item:not(:nth-child(2)){
+    margin-top: 40px;
+}
+@media only screen and (max-width: 700px){
+    .menu{
+        text-align: center;
+        padding: 40px 20px;
+        background: #edf8f8;
+        min-height: 650px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .item + .item{
+        margin-top: 40px;
+    }
+ }
