@@ -14,16 +14,16 @@
         </div>
         <div class="category row mt-4">
             <div class="category-nav">
-                <button id="all" data-id="" class="">All</button>
-                <button id="breakfast" data-id="breakfast" class="">Breakfast</button>
-                <button id="lunch" data-id="lunch" class="">lunch</button>
-                <button id="shakes" data-id="shakes" class="">shakes</button>
-                <button id="dinner" data-id="dinner" class="dinner ">dinner</button>
+                <button id="all" data-id="all" onclick="categoryClickHandle(this)" class="category">All</button>
+                <button id="breakfast" data-id="breakfast" onclick="categoryClickHandle(this)" class="">Breakfast</button>
+                <button id="lunch" data-id="lunch" onclick="categoryClickHandle(this)" class="">lunch</button>
+                <button id="shakes" data-id="shakes" onclick="categoryClickHandle(this)" class="">shakes</button>
+                <button id="dinner" data-id="dinner" onclick="categoryClickHandle(this)" class="dinner ">dinner</button>
             </div>
         </div>
         <div class="content mt-5">
             <div id="list-item" class="row ">
-                <div class="col-xl-6 item col 12">
+                <div data-category="breakfast" class="dish col-xl-6 item col 12">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-1.jpeg" alt="photo">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="lunch" >
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-2.jpeg" alt="photo">
@@ -51,12 +51,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-3.jpeg" alt="photo">
                         </div>
-                        <div class="col-md-7 col-12">
+                        <div class="col-md-7 col-12" data-category="shakes">
                             <ul class="nav justify-content-between">
                                 <li class="nav-item title">godzilla milkshake</li>
                                 <li class="nav-item price">$6.99</li>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="breakfast">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-4.jpeg" alt="photo">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="lunch">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-5.jpeg" alt="photo">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="shakes">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-6.jpeg" alt="photo">
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="breakfast">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-7.jpeg" alt="photo">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="lunch">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-8.jpeg" alt="photo">
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="shakes">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-9.jpeg" alt="photo">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 item col 12">
+                <div class="col-xl-6 item col 12 dish" data-category="dinner">
                     <div class="row">
                         <div class="col-md-5 col-12">
                             <img src="./img/item-10.jpeg" alt="photo">
@@ -168,6 +168,11 @@
             </div>
         </div>
     </div>
+    <script src="//unpkg.com/vue@2/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.15.13/lib/index.js"></script>
+<div id="app">
+
+</div>
     <script src="app.js"></script>
 </body>
 </html>

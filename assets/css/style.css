@@ -53,6 +53,12 @@ h1 {
     padding: 10px 10px;
     color: #af9839;
     transition: all 1s;
+    cursor: pointer;
+}
+
+.category button:hover {
+    background: #504408;
+    color: white;
 }
 
 button+button {
@@ -159,3 +165,9 @@ p {
         margin-top: 40px;
     }
  }
+
+.dish.hide {
+    display: none;
+}
+
+ @import url("//unpkg.com/element-ui@2.15.13/lib/theme-chalk/index.css");
